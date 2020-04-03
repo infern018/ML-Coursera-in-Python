@@ -84,4 +84,6 @@ xx1, xx2 = np.meshgrid(np.linspace(x1_min, x1_max), np.linspace(x2_min, x2_max))
 h = sigmoid(np.c_[np.ones((xx1.ravel().shape[0],1)), xx1.ravel(), xx2.ravel()].dot(res.x))
 h = h.reshape(xx1.shape)
 plt.contour(xx1, xx2, h, [0.5], linewidths=1, colors='b');      
-plt.show()      
+plt.show()    
+
+plt.savefig('graph.png')  

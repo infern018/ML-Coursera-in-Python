@@ -86,4 +86,4 @@ h = h.reshape(xx1.shape)
 plt.contour(xx1, xx2, h, [0.5], linewidths=1, colors='b');      
 plt.show()    
 
-plt.savefig('graph.png')  
+#plt.savefig('graph.png')  
